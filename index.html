@@ -3,92 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SNOTE Kamu</title>
+  <title>🔥 KISAH REMAJA TERBARU 🔥</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f5f7;
+      font-family: 'Poppins', Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1501973801540-537f08ccae7b?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+      background-size: cover;
       margin: 0;
       padding: 0;
+      color: #fff;
     }
     header {
-      background: #3f51b5;
-      color: white;
-      padding: 14px 20px;
-      font-size: 20px;
-      font-weight: bold;
+      background: linear-gradient(90deg, rgba(255, 87, 34, 0.9), rgba(255, 193, 7, 0.9));
+      padding: 16px;
       text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      font-weight: bold;
+      font-size: 22px;
     }
     .note {
-      background: #fff;
-      margin: 20px;
-      padding: 16px;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .note h3 {
-      margin-top: 0;
-      color: #333;
+      background: rgba(0,0,0,0.3);
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 15px;
+      backdrop-filter: blur(8px);
     }
     a {
       display: block;
-      color: #1976d2;
+      color: #ffeb3b;
       margin: 6px 0;
       text-decoration: none;
-      word-break: break-all;
     }
-    a:hover {
-      text-decoration: underline;
-    }
+    a:hover { color: #fff176; }
     footer {
       text-align: center;
-      color: #777;
-      padding: 15px;
-      font-size: 14px;
+      padding: 20px;
+      background: rgba(0,0,0,0.3);
     }
   </style>
 </head>
 <body>
 
-  <header>SNOTE.VIP</header>
+<header>🔥 KISAH REMAJA TERBARU 🔥</header>
 
-  <div class="note">
-    <h3>Note 23/10/2025</h3>
-    <p>Video lengkap hari ini 👇</p>
-    <div id="daftar-link"></div>
-  </div>
+<div class="note">
+  <h3>Note 14/11/2025</h3>
+  <p>Pemandangan hari ini ✨</p>
+  <div id="links"></div>
+</div>
 
-  <footer>© 2025 Snote Versi Kamu</footer>
+<footer>💛 Jangan lupa share ya sayang 💛</footer>
 
-  <script>
-    const links = [
-      "https://lnk.ink/Vid33yyv1d.short.gy.Wosd1",
-      "https://lnk.ink/Vid33yyv1d.short.gy.Cdse1",
-      "https://lnk.ink/Vid33yyv1d.short.gy.RGGV1",
-      "https://lnk.ink/Vid33yyv1d.short.gy.B8w1",
-      "https://lnk.ink/Vid33yyv1d.short.gy.Wooh1",
-      "https://lnk.ink/Vid33yyv1d.short.gy.Znsk1",
-      "https://lnk.ink/Vid33yyv1d.short.gy.ENAk1",
-      "https://lnk.ink/Vid33yyv1d.short.gy.Jose1",
-      "https://lnk.ink/Vid33yyv1d.short.gy.XQbd31",
-      "https://lnk.ink/Vid33yyv1d.short.gy.Des1",
-      "https://lnk.ink/Vid33yyv1d.short.gy.Mi0d1",
-      "https://lnk.ink/Vid33yyv1d.short.gy.alze1",
-      "https://lnk.ink/Vid33yyv1d.short.gy.Klws1",
-      "https://lnk.ink/Vid33yyv1d.short.gy.ISPe1",
-      "https://lnk.ink/Vid33yyv1d.short.gy.BMln1",
-      "https://lnk.ink/Vid33yyv1d.short.gy.Vdiw1",
-      "https://lnk.ink/Vid33yyv1d.short.gy.Frdo1"
-    ];
+<script>
+  const list = [
+    "AD:https://otieu.com/4/9973770",
 
-    const daftar = document.getElementById("daftar-link");
-    links.forEach(link => {
+    "https://lnk.ink/Vid33yyv1d.short.gy.Difb1",
+    "JEB:https://lnk.ink/Vid33yyv1d.short.gy.Fibb1",
+    "https://lnk.ink/Vid33yyv1d.short.gy.Zcid1",
+    "https://lnk.ink/Vid33yyv1d.short.gy.Cufb1",
+    "JEB:https://lnk.ink/Vid33yyv1d.short.gy.Vcyb1",
+    "https://lnk.ink/Vid33yyv1d.short.gy.Pnfy1",
+    "JEB:https://lnk.ink/Vid33yyv1d.short.gy.Sicle1",
+    "https://lnk.ink/Vid33yyv1d.short.gy.Fgbj1",
+    "https://lnk.ink/Vid33yyv1d.short.gy.Atvj1",
+    "JEB:https://lnk.ink/Vid33yyv1d.short.gy.Hxor1",
+    "https://lnk.ink/Vid33yyv1d.short.gy.Aoxb1",
+    "JEB:https://lnk.ink/Vid33yyv1d.short.gy.Ivyb1"
+  ];
+
+  const linksDiv = document.getElementById("links");
+  let currentAd = "https://otieu.com/4/9973770";
+
+  list.forEach(item => {
+    if(item.startsWith("AD:")){
+      currentAd = item.replace("AD:","");
+      return;
+    }
+    if(item.startsWith("JEB:")){
+      const real = item.replace("JEB:","");
       const a = document.createElement("a");
-      a.href = link;
-      a.textContent = link;
-      daftar.appendChild(a);
-    });
-  </script>
+      a.href = real;
+      a.textContent = real + " (redirect)";
+      linksDiv.appendChild(a);
+      return;
+    }
+
+    const video = item;
+    const a = document.createElement("a");
+    a.href = "interstitial.html?to=" + encodeURIComponent(video) + "&ad=" + encodeURIComponent(currentAd);
+    a.textContent = video;
+    linksDiv.appendChild(a);
+  });
+</script>
+
 </body>
 </html>
