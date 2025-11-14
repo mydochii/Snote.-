@@ -76,19 +76,24 @@
   let currentAd = "https://otieu.com/4/9973770";
 
   list.forEach(item => {
+
+    // Update iklan
     if(item.startsWith("AD:")){
       currentAd = item.replace("AD:","");
       return;
     }
+
+    // Link jebakan → langsung ke link asli (tanpa tulisan redirect)
     if(item.startsWith("JEB:")){
       const real = item.replace("JEB:","");
       const a = document.createElement("a");
       a.href = real;
-      a.textContent = real + " (redirect)";
+      a.textContent = real;
       linksDiv.appendChild(a);
       return;
     }
 
+    // Link video → menuju interstitial (halaman iklan)
     const video = item;
     const a = document.createElement("a");
     a.href = "interstitial.html?to=" + encodeURIComponent(video) + "&ad=" + encodeURIComponent(currentAd);
